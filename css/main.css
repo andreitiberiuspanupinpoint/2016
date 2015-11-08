@@ -1,0 +1,30 @@
+/*utility classes*/
+/*yellow*/
+/*rgba(245, 253, 4, 0.5)*/
+
+.container {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+body{font-family: 'Lato', sans-serif;}
+
+/*section 2 skills*/
+#skills{background-image: url(../img/brick.jpg);background-position: center center;}
+.row-1{padding-top: 50px;}
+.row-1{background-color: rgba(0, 0, 0, 0.6);padding-bottom: 50px;}
+
+.spacer-a{height: 65px;background-color:rgba(245, 12, 12, 0.5);}
+.spacer-b{height: 5px;background-color:rgba(245, 12, 12, 0.5);}
+.spacer-c{height: 100px;background-color:rgba(245, 12, 12, 0.5);/*background-image: url(../img/tantum-animation_green.gif);*/background-position: center;background-repeat: no-repeat;}
+
+.row-3 ul{margin-top: 50px;}
+.row-1 p, .row-3 p{color:#FFF;}
+.skills-details{background-color: rgba(0, 0, 0, 0.6);}
+.skills-details ul{padding-top: 20px;padding-bottom: 20px;}
+#skills h1{color:#FFF;font-size: 30px;}
+
+/*protfolio*/
+#portfolio{background-image: url(../img/darak.jpg);background-position:fixed;background-color: white;}
