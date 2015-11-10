@@ -32,11 +32,29 @@ $(document).ready(function() {
     	
     });
     // 4.owl carrousel
-    $(".owl-carousel").owlCarousel({
-    	items:1,
-    	loop:true,
-    	nav:true,
-    	autoplay:true,
-    	autoplayHoverPause:true,
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:1,
+        loop:true,
+        nav:false,
+        autoplay:false,
+        autoplayHoverPause:true,
     });
+
+    $('.customNextBtn').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+
+    $('.customPrevBtn').click(function() {
+        owl.trigger('prev.owl.carousel');
+    });
+
+
+
+
+    // 5.transform scale
+    // $("#portfolio li a").on("mouseenter", function(){
+    // 	$(this).addClass("scale");
+    // });
 });

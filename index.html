@@ -7,12 +7,16 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/animsition.css" />
-    <link rel="stylesheet" href="css/main.css" />
     <!-- fullpage -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <!-- owl carrousel -->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+	<!-- icon fonts -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     
@@ -40,11 +44,14 @@
 
 	<!-- section 2 skills-->
 	<div class="container" id="skills" data-stellar-background-ratio="0.3">
+	<div class="row spacer-a container">
+		&nbsp;
+	</div>
 	<div class="row">
 		<div class="large-12 columns" >
-			<div class="row spacer-a">
+			<!-- <div class="row spacer-a">
 				&nbsp;
-			</div>
+			</div> -->
 			<div class="row row-1" >
 				<div class="medium-8 columns background" >
 					<h1>Vision</h1>
@@ -65,8 +72,8 @@
 					<ul class="medium-block-grid-3">
 
 					  <li>
-					  		<h1>HTML 5</h1>
-					  		<p>The very first step in my journey of becoming a web developer. From doctype declaration up to new semantic and multimedia elements.</p>
+				  		<h1>HTML 5</h1>
+				  		<p>The very first step in my journey of becoming a web developer. From doctype declaration up to new semantic and multimedia elements.</p>
 					  </li>
 
 					  <li>
@@ -112,40 +119,41 @@
 					</ul>
 				</div>
 			</div><!--  row 2 -->
-			<div class="row spacer-c">
-				&nbsp;
-			</div>
 		</div>
 	</div>
+	<div class="row container spacer-c">
+		&nbsp;
+	</div>
 	</div><!-- container -->
-	<!-- section 3 portfolio-->
+
+	<!-- section 03 portfolio-->
 	<div class="container" id="portfolio" data-stellar-background-ratio="0.3">
 		<div class="row">
-			<div class="large-12 columns">
+			<div class="large-12 text-center large-centered columns">
 				<h1>Portfolio</h1>
 			</div>
 		</div>
 		<div class="row">
 			<!-- <div class="large-1 columns"><img src="img/jeans.jpg"></div> -->
-			<div class="large-8 columns large-centered">
+			<div class="large-12 columns text-center large-centered" >
 				<div class="owl-carousel">
 					<div>
 						<h2>Collection of html websites</h2>
-						<ul class="large-block-grid-3">
-							<li><a href="#"><img src="img/1.jpg"></a></li>
-							<li><a href="#"><img src="img/2.jpg"></a></li>
-							<li><a href="#"><img src="img/3.jpg"></a></li>
-							<li><a href="#"><img src="img/4.jpg"></a></li>
-							<li><a href="#"><img src="img/5.jpg"></a></li>
-							<li><a href="#"><img src="img/6.jpg"></a></li>
-							<li><a href="#"><img src="img/7.jpg"></a></li>
-							<li><a href="#"><img src="img/8.jpg"></a></li>
-							<li><a href="#"><img src="img/9.jpg"></a></li>
+						<ul class="medium-block-grid-3 large-block-grid-3">
+							<li><a href="#"><img src="img/1.jpg" class="scale-item"></a></li>
+							<li><a href="#"><img src="img/2.jpg" class="scale-item"></a></li>
+							<li><a href="#"><img src="img/3.jpg" class="scale-item"></a></li>
+							<li><a href="#"><img src="img/4.jpg" class="scale-item"></a></li>
+							<li><a href="#"><img src="img/5.jpg" class="scale-item"></a></li>
+							<li><a href="#"><img src="img/6.jpg" class="scale-item"></a></li>
+							<li><a href="#"><img src="img/7.jpg" class="scale-item"></a></li>
+							<li><a href="#"><img src="img/8.jpg" class="scale-item"></a></li>
+							<li><a href="#"><img src="img/9.jpg" class="scale-item"></a></li>
 						</ul>
 					</div><!--  html slide	 -->
 					<div>
 						<h2>Collection of html websites 2</h2>
-						<ul class="large-block-grid-3">
+						<ul class="medium-block-grid-3 large-block-grid-3">
 							<li><a href="#"><img src="img/1.jpg"></a></li>
 							<li><a href="#"><img src="img/2.jpg"></a></li>
 							<li><a href="#"><img src="img/3.jpg"></a></li>
@@ -158,22 +166,82 @@
 						</ul>
 					</div><!--  html slide	 -->
 				</div>	
-			</div>		
+			</div>	
 			<!-- <div class="large-1 columns"><img src="img/jeans.jpg"></div> -->
 		</div>
-
-
-
-		
-			
-		
-
+		<div class="row directions">
+			<div class="large-2 columns large-centered">
+				<div class="large-6 columns prev text-center"><i class="fa fa-chevron-left customPrevBtn"></i></div>
+				<div class="large-6 columns next text-center"><i class="fa fa-chevron-right customNextBtn"></i></div>
+			</div>
+		</div>
 	</div><!-- container -->
+
+	
+
+	<!-- section 04 form-->
+	<div class="container" style="background-color:#333">
+
+		<div class="row">
+			<!-- left area -->
+			<div class="large-6 columns" >
+				<form data-abide>
+				  	<div class="row">
+				    	<div class="large-12 columns">
+					      	<label>Subject Field
+					    		<input type="text" placeholder="Subject"  required pattern="[a-zA-Z]+" />
+					    	</label>
+					    	<small class="error">Subject is required and must be a string.</small>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="large-12 columns">
+					    	<label>Name Field
+					    		<input type="text" placeholder="Name" required pattern="[a-zA-Z]+" />
+					    	</label>
+					    	<small class="error">Name is required and must be a string.</small>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="large-12 columns">
+					    	<label>E-mail Field
+					    		<input type="text" placeholder="E-mail" required />
+					    	</label>
+					    	<small class="error">Valid Email is required.</small>
+					    </div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<div class="Message">
+								<label>Textarea Label
+									<textarea placeholder="Your message" required pattern="[a-zA-Z]+"></textarea>
+								</label>
+								<small class="error">Message is required and must be a string.</small>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns text-center">
+							<button class="small button radius" name="Send" type="submit">SEND</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- right area -->
+			<div class="large-6 columns">
+				<h1>Address:</h1>
+				<h2></h2>
+			</div>
+		</div><!-- row -->
+	</div>
+
 </div><!-- animsition -->
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/vendor/animsition.min.js"></script><!-- fullpage -->
+    <script type="text/javascript" src="js/vendor/SmoothScroll.js"></script><!-- smooth scroll -->
     <script type="text/javascript" src="js/vendor/jquery.fullpage.min.js"></script><!-- fullpage -->
     <script src="js/vendor/jquery.stellar.js"></script><!-- stellar js -->
     <script src="js/vendor/owl.carousel.min.js"></script><!-- owl js -->

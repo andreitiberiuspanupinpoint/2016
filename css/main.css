@@ -16,15 +16,28 @@ body{font-family: 'Lato', sans-serif;}
 .row-1{padding-top: 50px;}
 .row-1{background-color: rgba(0, 0, 0, 0.6);padding-bottom: 50px;}
 
-.spacer-a{height: 65px;background-color:rgba(245, 12, 12, 0.5);}
+.spacer-a{height: 50px;background-color:rgba(245, 12, 12, 0.4);}
 .spacer-b{height: 5px;background-color:rgba(245, 12, 12, 0.5);}
-.spacer-c{height: 100px;background-color:rgba(245, 12, 12, 0.5);/*background-image: url(../img/tantum-animation_green.gif);*/background-position: center;background-repeat: no-repeat;}
+.spacer-c{height: 50px;background-color:rgba(245, 12, 12, 0.4);background-position: center;background-repeat: no-repeat;}
 
 .row-3 ul{margin-top: 50px;}
 .row-1 p, .row-3 p{color:#FFF;}
-.skills-details{background-color: rgba(0, 0, 0, 0.6);}
 .skills-details ul{padding-top: 20px;padding-bottom: 20px;}
-#skills h1{color:#FFF;font-size: 30px;}
+#skills h1{color:#FFF;font-size: 40px;}
 
 /*protfolio*/
-#portfolio{background-image: url(../img/darak.jpg);background-position:fixed;background-color: white;}
+#portfolio{background-image: url(../img/dark.jpg);background-position:fixed;}
+#portfolio>div{background-color: rgba(0, 0, 0, 0.6);}
+#portfolio h1{color:#FFF;padding-top:50px;font-size: 50px;}
+#portfolio li a img:hover{ -webkit-animation: scale 0.2s; /* Chrome, Safari, Opera */ animation: scale 0.2s;}
+#portfolio h2{color: #FFF;font-size: 25px;padding-bottom: 50px;}
+#portfolio .directions{padding-top: 20px;padding-bottom: 20px;}
+#portfolio .next i, #portfolio .prev i{color:rgba(245, 12, 12, 0.4);font-size:1.3em;line-height:1.3em;}
+#portfolio .next i:hover, #portfolio .prev i:hover{cursor: pointer}
+
+
+@keyframes scale{
+	0%{transform: scale(1,1);-webkit-transform: scale(1,1);}
+	50%{transform: scale(1.05,1.05);-webkit-transform: scale(1.05,1.05);}
+	100%{transform: scale(1,1);-webkit-transform: scale(1,1);}
+}
