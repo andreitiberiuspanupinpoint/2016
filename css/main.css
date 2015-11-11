@@ -21,20 +21,44 @@ body{font-family: 'Lato', sans-serif;}
 .spacer-c{height: 50px;background-color:rgba(245, 12, 12, 0.4);background-position: center;background-repeat: no-repeat;}
 
 .row-3 ul{margin-top: 50px;}
-.row-1 p, .row-3 p{color:#FFF;}
+.row-1 p, .row-3 p{color:#FFF;font-weight: 400}
 .skills-details ul{padding-top: 20px;padding-bottom: 20px;}
-#skills h1{color:#FFF;font-size: 40px;}
+#skills h1{color:#FFF;font-size: 30px;font-weight: 700}
 
 /*protfolio*/
 #portfolio{background-image: url(../img/dark.jpg);background-position:fixed;}
 #portfolio>div{background-color: rgba(0, 0, 0, 0.6);}
-#portfolio h1{color:#FFF;padding-top:50px;font-size: 50px;}
+#portfolio h1{color:#FFF;padding-top:50px;font-size: 50px;font-weight: 700}
 #portfolio li a img:hover{ -webkit-animation: scale 0.2s; /* Chrome, Safari, Opera */ animation: scale 0.2s;}
-#portfolio h2{color: #FFF;font-size: 25px;padding-bottom: 50px;}
+#portfolio h2{color: #FFF;font-size: 25px;padding-bottom: 50px;font-weight: 300}
 #portfolio .directions{padding-top: 20px;padding-bottom: 20px;}
 #portfolio .next i, #portfolio .prev i{color:rgba(245, 12, 12, 0.4);font-size:1.3em;line-height:1.3em;}
 #portfolio .next i:hover, #portfolio .prev i:hover{cursor: pointer}
 
+/*spacer*/
+.spacer-footer{background-color: rgba(0, 0, 0, 0.3);height:65px}
+
+/*section 4 contact*/
+#contact{background-image:url(../img/distressed-leather-2.jpg);}
+#contact .row{}
+#contact h1{font-size: 40px;font-weight: 700;color: #FFF;padding: 0 20px;}
+#contact h2{color: #FFF;font-weight: 300;font-size:1.2em;padding: 0 20px;}
+#contact p{color: #FFF;font-weight: 400;}
+.address::before{content:"\f041";padding-right: 15px;font-family:fontawesome; }
+.phone::before{content:"\f10b";padding-right: 15px;font-family:fontawesome; }
+.email::before{content:"\f0e0";padding-right: 15px;font-family:fontawesome; }
+.padding-row-top{padding-top: 50px;padding-bottom: 20px;background-color:rgba(0, 0, 0, 0.3);}
+.padding-row-bottom{padding-bottom: 150px;background-color:rgba(0, 0, 0, 0.3);}
+.padding-row-bottom form{background-color:rgba(255, 255, 255, 0.3);}
+.padding-row-bottom form .row{width: 98%;margin: auto;}
+
+
+#contact-information ul li{list-style-type: none;}
+
+/*section 5 footer*/
+#footer{background-color:#333;}
+#footer p{font-weight:400;font-size: 1.2em;color: #FFF;margin-top: 10px;}
+#footer .fa{font-size: 2em;color:#FFF;margin-top: 10px;}
 
 @keyframes scale{
 	0%{transform: scale(1,1);-webkit-transform: scale(1,1);}
