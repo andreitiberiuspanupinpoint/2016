@@ -47,18 +47,15 @@
 	<div class="row spacer-a container">
 		&nbsp;
 	</div>
-	<div class="row">
+	<div class="row" id="vision">
 		<div class="large-12 columns" >
-			<!-- <div class="row spacer-a">
-				&nbsp;
-			</div> -->
 			<div class="row row-1" >
 				<div class="medium-8 columns background" >
 					<h1>Vision</h1>
 					<p>I consider myself to be an explorer opened to new challenges, fit for the ever changing technological and social landscape of today. Programming, for me, transformed from a hobby to a lifestyle and then turned into a fruitful career. Who I am is the end result of many hours, days, months of continuous preparation, testing and learning.</p>
 					<p>The future is bright because I still have the same firmness of purpose to succeed, to upgrade my skills and to improve as an individual. I feel every day the same joy as when I wrote my first "Hello World!".</p>
 					<p>The programming languages gradually add up like an puzzle of electronic knowledge, every single one allowing for deeper understanding of the mysterious analytical world. Programming is art, science and determination, all in one place, under a very rewarding and highly addictive form. It defines my personality.</p>
-					<p>For each and every step forward I have rewarded myself a star :</p>
+					<p>In order to prevent spam I have developed a smart and easy to implement swipe validation. It can be seen in action in the <span>form</span> below.</p>
 				</div>
 				<div class="medium-4 columns text-center">
 					<img src="img/me.jpg">
@@ -97,23 +94,23 @@
 					  </li>
 
 					  <li>
+				  		<h1>SASS</h1>
+				  		<p>Used with Grunt and Bourbon (the library) making more sense of the CSS semantics and speeding up the team workflow.</p>
+					  </li>
+
+					  <li>
 				  		<h1>Responsive Design</h1>
-				  		<p>Fixed layout is obsolete. With all the new mobile devices and screen sizes, responsive design is the key.</p>
+				  		<p>Bootstrap, Zurb Foundation or the "old school" media queries techniques, always looking great on any display.</p>
 					  </li>
 
 					  <li>
-				  		<h1>MySQL</h1>
-				  		<p>The most widely used open-source Database Management System. Since my designs became more complex, I needed this upgrade.</p>
-					  </li>
-
-					  <li>
-				  		<h1>PHP</h1>
+				  		<h1>PHP &amp; MySQL</h1>
 				  		<p>Now a brand new chapter opened: dynamic websites, database queries, server-side validations, user acces, sessions and many more.</p>
 					  </li>
 
 					  <li>
-				  		<h1>Ajax</h1>
-				  		<p>Works with the server and PHP to deliver fast, dynamic content.</p>
+				  		<h1>GIT</h1>
+				  		<p>Version Control in order to have my back-up allways on hand.</p>
 					  </li>
 
 					</ul>
@@ -182,7 +179,7 @@
 	<div class="container" id="contact">
 		<div class="row padding-row-top">
 			<h1>Contact</h1>
-			<h2>I want to hear from you. Whether you're a prospective client, interested in my work or looking for opportunities, send me a note. 
+			<h2>I would be happy to hear from you. Whether you're a prospective client, interested in my work or looking for opportunities, please send me a note. 
 			I am working hard but will try and respond to you within a few hours.</h2>
 		</div>
 		<div class="row padding-row-bottom" data-equalizer style="">
@@ -217,24 +214,33 @@
 						<div class="large-12 columns">
 							<div class="Message">
 								<label>Textarea Label
-									<textarea placeholder="Your message" required pattern="[a-zA-Z]+"></textarea>
+									<textarea placeholder="Your message. Please don't forget to toggle the white ball below to the right ..." required pattern="[a-zA-Z]+"></textarea>
 								</label>
 								<small class="error">Message is required and must be a string.</small>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="large-12 columns text-center">
-							<button class="small button radius" name="Send" type="submit">SEND</button>
+					<div class="slidelock"  class="cf">
+						<div class="source" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img id="drag1" src="img/buton.png" alt="ninja" title="validate trigger" draggable="true" ondragstart="drag(event)" data-value="12">
+						</div>
+						<div class="destination" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" data-value="12">
 						</div>
 					</div>
+					<br/>
+					<div class="row">
+						<div class="large-6 large-centered columns">
+							<input id="submit" type="submit" class="button" value="submit" disabled="disabled">
+						</div>
+					</div>
+					
 				</form>
 			</div>
 
 			<!-- right area -->
 			<div class="medium-6 large-6 columns" data-equalizer-watch id="contact-information">
-				<h1>Contact Information</h1>
-				<h2>I am happy to hear from you, please fill out the request for proposal form and I will be in touch shortly.</h2>
+				<h1>Location</h1>
+				<h2>From the beautifull and digitalized metropolis of Romania, Bucharest, with great anticipation:</h2>
 				<ul>
 					<li><p class="address">Valeriu Braniste St. / Bucharest</p></li>
 					<li><p class="phone">0040 770 742 591</p></li>
@@ -274,6 +280,37 @@
     <script>
       $(document).foundation();
     </script>
+
+    <script type="text/javascript">
+		
+		
+			function drag(ev){
+                        ev.dataTransfer.setData("Text", ev.target.id);
+            }
+
+            
+
+            function drop(ev){
+                ev.preventDefault();
+                var data=ev.dataTransfer.getData("Text");
+                ev.target.appendChild(document.getElementById(data));
+                var parent=document.getElementById("drag1").getAttribute("data-value");
+                var child=document.getElementById("div2").getAttribute("data-value");
+                var sum=parseInt(child)+parseInt(parent);
+                
+                if(sum===24){
+                    document.getElementById("submit").removeAttribute("disabled"); 
+                    $('#submit').delay('slow').addClass('animated tada');
+                    $('#drag1').addClass('animated zoomOut');
+                    $('.slidelock').addClass('animated rollOut');
+                }
+
+            }
+
+            function allowDrop(ev){
+                ev.preventDefault();
+            }
+	</script>	
 
 
   </body>

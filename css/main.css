@@ -1,14 +1,8 @@
-/*utility classes*/
-/*yellow*/
-/*rgba(245, 253, 4, 0.5)*/
+/*utility classes
 
-.container {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: initial;
-}
+yellow --> rgba(245, 253, 4, 0.5)*/
 
+.container{width: 100%;margin-left: auto;margin-right: auto;max-width: initial;}
 body{font-family: 'Lato', sans-serif;}
 
 /*section 2 skills*/
@@ -26,10 +20,11 @@ body{font-family: 'Lato', sans-serif;}
 #skills h1{color:#FFF;font-size: 30px;font-weight: 700}
 
 /*protfolio*/
-#portfolio{background-image: url(../img/dark.jpg);background-position:fixed;}
+#portfolio{background-image: url(../img/dark.jpg);background-attachment:fixed;}
 #portfolio>div{background-color: rgba(0, 0, 0, 0.6);}
 #portfolio h1{color:#FFF;padding-top:50px;font-size: 50px;font-weight: 700}
-#portfolio li a img:hover{ -webkit-animation: scale 0.2s; /* Chrome, Safari, Opera */ animation: scale 0.2s;}
+#portfolio li a img{opacity: 0.8}
+#portfolio li a img:hover{ -webkit-animation: scale 0.2s; /* Chrome, Safari, Opera */ animation: scale 0.2s;opacity: 1;}
 #portfolio h2{color: #FFF;font-size: 25px;padding-bottom: 50px;font-weight: 300}
 #portfolio .directions{padding-top: 20px;padding-bottom: 20px;}
 #portfolio .next i, #portfolio .prev i{color:rgba(245, 12, 12, 0.4);font-size:1.3em;line-height:1.3em;}
@@ -51,8 +46,12 @@ body{font-family: 'Lato', sans-serif;}
 .padding-row-bottom{padding-bottom: 150px;background-color:rgba(0, 0, 0, 0.3);}
 .padding-row-bottom form{background-color:rgba(255, 255, 255, 0.3);}
 .padding-row-bottom form .row{width: 98%;margin: auto;}
-
-
+input[type="submit"]{width: 100%;border:1px solid grey;background: orange;font-size: .8em;}
+.slidelock{width: 130px;height: 50px;padding: 10px;margin: auto;}
+.source{padding: 5px;width: 50px;height: 50px;border-right: none;background: black;float: left;border-radius: 100% 0 0 100%;}
+#contact textarea{height: 150px;}
+.destination{padding: 5px;width: 50px;height: 50px;border-left:none;background: black;float:left;border-radius: 0 100% 100% 0;}
+#contact form img{width:100%;height:100%;border-radius: 100%;}
 #contact-information ul li{list-style-type: none;}
 
 /*section 5 footer*/
@@ -61,7 +60,7 @@ body{font-family: 'Lato', sans-serif;}
 #footer .fa{font-size: 2em;color:#FFF;margin-top: 10px;}
 
 @keyframes scale{
-	0%{transform: scale(1,1);-webkit-transform: scale(1,1);}
+	0%{transform: scale(1,1);-webkit-transform: scale(1,1);opacity: 0.8}
 	50%{transform: scale(1.05,1.05);-webkit-transform: scale(1.05,1.05);}
-	100%{transform: scale(1,1);-webkit-transform: scale(1,1);}
+	100%{transform: scale(1,1);-webkit-transform: scale(1,1);opacity: 1}
 }

@@ -53,8 +53,7 @@ $(document).ready(function() {
 
 
 
-    // 5.transform scale
-    // $("#portfolio li a").on("mouseenter", function(){
-    // 	$(this).addClass("scale");
-    // });
+    // 5.drag and drop validate
+    
+    
 });
