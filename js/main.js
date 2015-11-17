@@ -56,4 +56,30 @@ $(document).ready(function() {
     // 5.drag and drop validate
     
     
+            // function drag(ev){
+            //     ev.dataTransfer.setData("Text", ev.target.id);
+            // }
+
+            
+
+            // function drop(ev){
+            //     ev.preventDefault();
+            //     var data=ev.dataTransfer.getData("Text");
+            //     ev.target.appendChild(document.getElementById(data));
+            //     var parent=document.getElementById("drag1").getAttribute("data-value");
+            //     var child=document.getElementById("div2").getAttribute("data-value");
+            //     var sum=parseInt(child)+parseInt(parent);
+                
+            //     if(sum===24){
+            //         document.getElementById("submit").removeAttribute("disabled"); 
+            //         $('#submit').delay('slow').addClass('animated tada');
+            //         $('#drag1').addClass('animated zoomOut');
+            //         $('.slidelock').addClass('animated rollOut');
+            //     }
+
+            // }
+
+            // function allowDrop(ev){
+            //     ev.preventDefault();
+            // }
 });
