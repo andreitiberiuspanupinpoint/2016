@@ -18,22 +18,30 @@ body{font-family: 'Lato', sans-serif;}
 #skills h1{color:#FFF;font-size: 30px;font-weight: 700}
 
 /*protfolio*/
-#portfolio{background-image: url(../img/dark.jpg);background-attachment:fixed;}
-#portfolio>div{background-color: rgba(0, 0, 0, 0.6);}
+#portfolio{background-image: url(../img/bg/binding_dark.png);background-attachment:fixed;}
+#portfolio>div{background-color: rgba(0, 0, 0, 0.3);}
 #portfolio h1{color:#FFF;padding-top:50px;font-size: 50px;font-weight: 700}
 #portfolio li a img{opacity: 0.95}
 #portfolio li a img:hover{ -webkit-animation: scale 0.2s; /* Chrome, Safari, Opera */ animation: scale 0.2s;opacity: 1;}
 #portfolio h2{color: #FFF;font-size: 25px;padding-bottom: 50px;font-weight: 300}
 #portfolio .directions{padding-top: 20px;padding-bottom: 20px;}
-#portfolio .next i, #portfolio .prev i{color:rgba(245, 12, 12, 0.4);font-size:1.3em;line-height:1.3em;}
+#portfolio .next i, #portfolio .prev i{color:rgba(245, 12, 12, 1);font-size:1.3em;line-height:1.3em;}
 #portfolio .next i:hover, #portfolio .prev i:hover{cursor: pointer}
 
+/*
+seamless_paper_texture.png
+binding_dark.png
+footer_lodyas.png
+tweed.png
+zwartevilt.png
+*/
+
 /*spacer*/
-.spacer-footer{background-color: rgba(255, 255, 255, 0.2)!important;height:65px}
+.spacer-footer{background-color: rgba(255, 255, 255, 0.1)!important;height:65px;padding-top: 100px;}
 
 /*section 4 contact*/
-#contact{background-image:url(../img/distressed-leather-2.jpg);}
-#contact .row{}
+#contact{background-image:url(../img/bg/binding_dark.png);background-attachment:fixed}
+#contact .form-holder form{border-radius: 5px 5px 0 0}
 #contact h1{font-size: 40px;font-weight: 700;color: #FFF;padding: 0 20px;}
 #contact h2{color: #FFF;font-weight: 300;font-size:1.2em;padding: 0 20px;}
 #contact p{color: #FFF;font-weight: 400;}
@@ -49,6 +57,7 @@ input[type="submit"]{width: 100%;border:1px solid grey;background: orange;font-s
 .source{padding: 5px;width: 50px;height: 50px;border-right: none;background: black;float: left;border-radius: 100% 0 0 100%;}
 #contact textarea{height: 150px;}
 .destination{padding: 5px;width: 50px;height: 50px;border-left:none;background: black;float:left;border-radius: 0 100% 100% 0;}
+#contact form label input, #contact form label textarea{background-image:url(../img/bg/seamless_paper_texture.png);border-radius: 5px}
 #contact form img{width:100%;height:100%;border-radius: 100%;}
 #contact-information ul li{list-style-type: none;}
 #contact-information ul li a{color: inherit;}
@@ -58,8 +67,8 @@ input[type="submit"]{width: 100%;border:1px solid grey;background: orange;font-s
 #footer .fa{font-size: 2em;color:#FFF;margin-top: 10px;}
 .red{color:rgba(245, 12, 12, 1);}
 
-@keyframes scale{
+/*@keyframes scale{
 	0%{transform: scale(1,1);-webkit-transform: scale(1,1);opacity: 0.8}
 	50%{transform: scale(1.05,1.05);-webkit-transform: scale(1.05,1.05);}
 	100%{transform: scale(1,1);-webkit-transform: scale(1,1);opacity: 1}
-}
+}*/
